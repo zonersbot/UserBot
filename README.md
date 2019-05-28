@@ -1,6 +1,6 @@
 # UserBot
 
-### installing
+### Installing
 
  #### # The Easiest Way
 
