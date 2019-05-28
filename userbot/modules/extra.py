@@ -163,7 +163,7 @@ async def rextestercli(e):
         await e.edit(output)
 
 
-CMD_,HELP.update({
+CMD_HELP.update({
     "leave": "Leave a Chat"
 })
 CMD_HELP.update({
