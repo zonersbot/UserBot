@@ -1,4 +1,4 @@
-# Telegram-UserBot
+# UserBot
 
 ### installing
 
