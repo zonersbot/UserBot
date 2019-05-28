@@ -22,9 +22,9 @@ async def spammer(e):
             )
 
         await e.delete()
-        if LOGGER:
+        if BOTLOG:
             await e.client.send_message(
-                LOGGER_GROUP,
+                BOTLOG_CHATID,
                 "#SPAM \n\n"
                 "Spam was executed successfully"
                 )
@@ -41,9 +41,9 @@ async def bigspam(e):
             await e.respond(spam_message)
 
         await e.delete()
-        if LOGGER:
+        if BOTLOG:
             await e.client.send_message(
-                LOGGER_GROUP,
+                BOTLOG_CHATID,
                 "#BIGSPAM \n\n"
                 "Bigspam was executed successfully"
                 )
@@ -82,9 +82,9 @@ async def tiny_pic_spam(e):
         if range(1, counter):
             await e.client.send_file(e.chat_id, link)
         await e.delete()
-        if LOGGER:
+        if BOTLOG:
             await e.client.send_message(
-                LOGGER_GROUP,
+                BOTLOG_CHATID,
                 "#PICSPAM \n\n"
                 "PicSpam was executed successfully"
                 )
