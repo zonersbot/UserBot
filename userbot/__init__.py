@@ -52,6 +52,7 @@ API_KEY = os.environ.get("API_KEY", None)
 
 OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
 
+
 API_HASH = os.environ.get("API_HASH", None)
 
 BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", "0"))
