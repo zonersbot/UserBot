@@ -1,6 +1,6 @@
 import asyncio, subprocess
 import time, re, io
-from userbot import bot, LOGGER, LOGGER_GROUP, HELPER
+from userbot import bot, BOTLOG, BOTLOG_CHATID, HELPER
 from telethon import events, functions, types
 from telethon.events import StopPropagation
 from telethon.tl.functions.messages import ExportChatInviteRequest
@@ -163,36 +163,36 @@ async def rextestercli(e):
         await e.edit(output)
 
 
-HELPER.update({
+CMD_,HELP.update({
     "leave": "Leave a Chat"
 })
-HELPER.update({
+CMD_HELP.update({
     ";__;": "You try it!"
 })
-HELPER.update({
+CMD_HELP.update({
     "cry": "Cry"
 })
-HELPER.update({
+CMD_HELP.update({
     "fp": "Send face palm emoji."
 })
-HELPER.update({
+CMD_HELP.update({
     "moon": "Bot will send a cool moon animation."
 })
-HELPER.update({
+CMD_HELP.update({
     "clock": "Bot will send a cool clock animation."
 })
-HELPER.update({
+CMD_HELP.update({
     "readme": "Reedme."
 })
-HELPER.update({
+CMD_HELP.update({
     "sauce": "source."
 })
-HELPER.update({
+.update({
     "disapprove": "Disapprove anyone in PM."
 })
-HELPER.update({
+CMD_HELP.update({
     "myusernames": "List of Usernames owned by you."
 })
-HELPER.update({
+CMD_HELP.update({
     "oof": "Same as ;__; but ooof"
 })
