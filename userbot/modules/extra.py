@@ -187,7 +187,7 @@ CMD_HELP.update({
 CMD_HELP.update({
     "sauce": "source."
 })
-.update({
+CMD_HELP.update({
     "disapprove": "Disapprove anyone in PM."
 })
 CMD_HELP.update({
