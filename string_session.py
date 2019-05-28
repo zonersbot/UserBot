@@ -9,3 +9,4 @@ Create a new application, by entering the required details""")
 
  with TelegramClient(StringSession(), API_KEY, API_HASH) as client:
     print(client.session.save())
+
