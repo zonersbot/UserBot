@@ -67,11 +67,12 @@ async def whoizme(e):
         await e.edit("EVERyBOdy iZ GangSTur UNtIL I ArRivE")
 
 @register(outgoing=True, pattern="^.repeat")
-async def inlinespem(e):
-    message = e.text[6:-8]
-    count = int(e.text[-8:])
-    final = message * count
-    await e.respond(final)
+async def repeat(e):
+    message = e.text[10:]
+    count = int(e.text[8:10])
+    repmessage = message * count
+    await e.respond(repmessage)
+    await e.delete()
 
 @register(outgoing=True, pattern="^.picspam")
 async def tiny_pic_spam(e):
