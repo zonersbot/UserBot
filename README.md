@@ -26,22 +26,19 @@
 /**
 ```
 
-A modular telegram Python UserBot running on python3 with an sqlalchemy database.
-
-Started up as a simple bot, which helps with deleting messages and other stuffs when I didn't possess a smartphone(selecting each message indeed difficult) with a ton of meme features kanged from [SkittBot](https://github.com/skittles9823/SkittBot), it has evolved, becoming extremely modular and simple to use.
+A modular telegram Python UserBot running on python3.
 
 For configuring this userbot, you can checkout the [Wiki](https://wiki.raphielgang.org)
 
-If you just want to stay in the loop about new features or
-announcements you can join the [news channel](https://t.me/maestro_userbot_channel).
-
-If you find any bugs or have any suggestions then don't hesitate to contact me in [my support group](https://t.me/userbot_support).
+If you find any bugs or have any suggestions then don't hesitate to [contact me](https://t.me/noobvishal).
 
 Please head to the wiki on instructions to setting it up!
 
 ### Credits:
 
-I would like to thank people who assisted me throughout this project:
+This is a fork a Balajimastro's Telegram-Userbot with some feature kanged from Yasir's repo.
+
+Thanks to the people who assisted Balajimastro throughout this project:
 
 * [@YouTwitFace](https://github.com/YouTwitFace)
 * [@TheDevXen](https://github.com/TheDevXen)
@@ -54,4 +51,4 @@ I would like to thank people who assisted me throughout this project:
 
 and many more people who aren't mentioned here.
 
-Found Bugs? Create an issue on the issue tracker, or post it in the [support group](https://t.me/userbot_support).
+### Special Thanks To [YasiR Siddiqui](https://github.com/Yasir-siddiqui)
