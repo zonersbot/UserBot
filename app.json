@@ -35,7 +35,7 @@
     },
     "BOTLOG": {
       "description": "Incase you want to turn off logging, put this to false",
-      "value": "",
+      "value": "TRUE",
       "required": false
     },
     "BOTLOG_CHATID": {
@@ -45,15 +45,17 @@
     },
     "CONSOLE_LOGGER_VERBOSE": {
       "description": "If you need Verbosity on the Logging",
-      "value": "",
+      "value": "FALSE",
       "required": false
     },
     "PM_AUTO_BAN": {
       "description": "PM Auto-Ban Feature Switch",
+      "value": "TRUE"
       "required": false
     },
     "BUILD_CHOICE": {
       "description": "Build Choice Bleeding or Stable",
+      "value": "Bleeding"
       "required": false
     },
     "UPDATER": {
