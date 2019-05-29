@@ -10,9 +10,9 @@
 ### If the CI builds pass, but you still get syntax errors when running locally it's most probably not a problem with the source but with your version of python
 
 
-```
-#include
-/**
+```diff
+#Disclaimer
+
     Your Telegram account may get banned.
     I am not responsible for any improper use of this bot
     This bot is intended for the purpose of having fun with memes,
@@ -23,7 +23,6 @@
     And after that, then you pointed your fingers at us
     for getting your acoount deleted?
     I will rolling on the floor laughing at you.
-/**
 ```
 
 A modular telegram Python UserBot running on python3.
