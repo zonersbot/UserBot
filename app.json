@@ -50,12 +50,10 @@
     },
     "PM_AUTO_BAN": {
       "description": "PM Auto-Ban Feature Switch",
-      "value": "TRUE"
       "required": false
     },
     "BUILD_CHOICE": {
       "description": "Build Choice Bleeding or Stable",
-      "value": "Bleeding"
       "required": false
     },
     "UPDATER": {
