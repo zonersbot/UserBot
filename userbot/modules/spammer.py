@@ -68,8 +68,8 @@ async def whoizme(e):
 
 @register(outgoing=True, pattern="^.repeat")
 async def inlinespem(e):
-    message = e.text[6:8]
-    count = int(e.text[8:])
+    message = e.text[6:-8]
+    count = int(e.text[-8:])
     final = message * count
     await e.respond(final)
 
