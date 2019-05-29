@@ -11,7 +11,7 @@
 
 
 ```
-#include <std/disclaimer.h>
+#include
 /**
     Your Telegram account may get banned.
     I am not responsible for any improper use of this bot
