@@ -66,7 +66,7 @@ async def whoizme(e):
         await asyncio.sleep(0.3)
         await e.edit("🔥")
         await asyncio.sleep(0.3)
-        await e.edit("`EVERyBOdy iZ GangSTur UNtIL I ArRivE 🔥`")
+        await e.edit("EVERyBOdy iZ GangSTur UNtIL I ArRivE 🔥")
 
 @register(outgoing=True, pattern="^.repeat")
 async def repeat(e):
