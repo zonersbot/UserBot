@@ -15,6 +15,8 @@ import time
 from spongemock import spongemock
 from zalgo_text import zalgo
 
+from asyncio import wait
+
 from cowpy import cow
 
 from userbot import (DISABLE_RUN, WIDE_MAP, CMD_HELP)
