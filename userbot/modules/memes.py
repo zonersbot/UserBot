@@ -23,7 +23,7 @@ from userbot.events import register
 # ================= CONSTANT =================
 METOOSTR = [
     "Me too thanks",
-    "Haha yes, me too",
+    "Haha yash, me too",
     "Same lol",
     "Me irl",
     "Same here",
@@ -333,22 +333,6 @@ async def zal(zgfy):
 async def hoi(hello):
     """ Greet everyone! """
     await hello.edit("Hoi!😄")
-
-
-@register(outgoing=True, pattern="^.rape$")
-async def raping (raped):
-    """ Dont Rape Too much -_-"""
-    if not raped.text[0].isalpha() and raped.text[0] not in ("/", "#", "@", "!"):
-        if await raped.get_reply_message():
-            await raped.edit("`Relax your Rear,ders nothing to fear,The Rape train is finally here`\n")
-
-
-@register(outgoing=True, pattern="^.rip$")
-async def resting (rest):
-    """  Ezio Auditore Rest In peace """
-    if not rest.text[0].isalpha() and rest.text[0] not in ("/", "#", "@", "!"):
-        if await rest.get_reply_message():
-            await rest.edit("`Requiescat In Pace ☠️`\n")
 
 
 @register(outgoing=True, pattern="^.owo(?: |$)(.*)")
