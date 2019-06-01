@@ -68,6 +68,27 @@ async def whoizme(e):
         await asyncio.sleep(0.3)
         await e.edit("EVERyBOdy iZ GangSTur UNtIL I ArRivE 🔥")
 
+
+@register(outgoing=True, pattern="^.rip$")
+async def restinpeace (rest):
+    """  Ezio Auditore Rest In Peace """
+    if not rest.text[0].isalpha() and rest.text[0] not in ("/", "#", "@", "!"):
+        if await rest.get_reply_message():
+            await rest.edit(
+                "`Requiescat In Pace 🏴‍☠️`\n"
+            )
+
+
+@register(outgoing=True, pattern="^.rape$")
+async def raping (raped):
+    """ Dont Rape Too much -_-"""
+    if not raped.text[0].isalpha() and raped.text[0] not in ("/", "#", "@", "!"):
+        if await raped.get_reply_message():
+            await raped.edit(
+                "`Relax your Rear,ders nothing to fear,The Rape train is finally here`\n"
+            )
+
+
 @register(outgoing=True, pattern="^.repeat")
 async def repeat(e):
     message = e.text[10:]
