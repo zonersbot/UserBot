@@ -12,7 +12,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 from sqlalchemy.exc import IntegrityError
 
 from userbot import (COUNT_PM, CMD_HELP, BOTLOG, BOTLOG_CHATID,
-                     PM_AUTO_BAN, BRAIN_CHECKER, LASTMSG, LOGS)
+                     PM_AUTO_BAN, LASTMSG, LOGS)
 from userbot.events import register
 
 # ========================= CONSTANTS ============================
@@ -28,8 +28,6 @@ async def permitpm(event):
     """ Permits people from PMing you without approval. \
         Will block retarded nibbas automatically. """
     if PM_AUTO_BAN:
-        if event.sender_id in BRAIN_CHECKER:
-            return
         if event.is_private and not (await event.get_sender()).bot:
             try:
                 from userbot.modules.sql_helper.pm_permit_sql import is_approved
