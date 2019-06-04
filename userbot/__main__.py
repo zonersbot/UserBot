@@ -10,7 +10,7 @@ from sqlite3 import connect
 from sys import argv
 
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
-from userbot import BRAIN_CHECKER, LOGS, bot
+from userbot import LOGS, bot
 from userbot.modules import ALL_MODULES
 
 DB = connect("learning-data-root.check")
@@ -22,7 +22,6 @@ INVALID_PH = '\nERROR: The Phone No. entered is INVALID' \
              '\n       Recheck your Phone Number'
 
 for i in ALL_ROWS:
-    BRAIN_CHECKER.append(i[0])
 connect("learning-data-root.check").close()
 try:
     bot.start()
