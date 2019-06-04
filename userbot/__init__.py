@@ -92,11 +92,6 @@ DEFAULT_BIO = os.environ.get("DEFAULT_BIO", None)
 # pylint: disable=invalid-name
 bot = TelegramClient(StringSession(STRING_SESSION), API_KEY, API_HASH)
 
-URL = 'https://raw.githubusercontent.com/RaphielGang/databasescape/master/learning-data-root.check'
-
-with open('learning-data-root.check', 'wb') as load:
-    load.write(get(URL).content)
-
 # Global Variables
 SNIPE_TEXT = ""
 COUNT_MSG = 0
