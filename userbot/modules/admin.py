@@ -20,7 +20,7 @@ from telethon.tl.types import (ChannelParticipantsAdmins, ChatAdminRights,
                                ChatBannedRights, MessageEntityMentionName,
                                MessageMediaPhoto)
 
-from userbot import BOTLOG, BOTLOG_CHATID, BRAIN_CHECKER, CMD_HELP, bot
+from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP, bot
 from userbot.events import register
 
 # =================== CONSTANT ===================
@@ -239,13 +239,6 @@ async def thanos(bon):
         else:
             return
 
-        # If the user is a sudo
-        if user.id in BRAIN_CHECKER:
-            await bon.edit(
-                "`Ban Error! I am not supposed to ban this user`"
-            )
-            return
-
         # Announce that we're going to whack the pest
         await bon.edit("`Whacking the pest!`")
 
@@ -355,13 +348,6 @@ async def spider(spdr):
         if user:
             pass
         else:
-            return
-
-        # If the targeted user is a Sudo
-        if user.id in BRAIN_CHECKER:
-            await spdr.edit(
-                "`Mute Error! I am not supposed to mute this user`"
-            )
             return
 
         # If everything goes well, do announcing and mute
@@ -539,11 +525,6 @@ async def gspider(gspdr):
         if user:
             pass
         else:
-            return
-
-        # If the targeted user is a SUDO
-        if user.id in BRAIN_CHECKER:
-            await gspdr.edit("`Gmute Error! Couldn't gmute this user`")
             return
 
         # If pass, inform and start gmuting
