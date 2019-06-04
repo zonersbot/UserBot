@@ -21,11 +21,6 @@ INVALID_PH = '\nERROR: The Phone No. entered is INVALID' \
              '\n  Tip: Use Country Code along with No.' \
              '\n       Recheck your Phone Number'
 
-for i in ALL_ROWS:
-except PhoneNumberInvalidError:
-    print(INVALID_PH)
-    exit(1)
-
 for module_name in ALL_MODULES:
     imported_module = import_module("userbot.modules." + module_name)
 
