@@ -22,7 +22,6 @@ INVALID_PH = '\nERROR: The Phone No. entered is INVALID' \
              '\n       Recheck your Phone Number'
 
 for i in ALL_ROWS:
-connect("learning-data-root.check").close()
 try:
     bot.start()
 except PhoneNumberInvalidError:
