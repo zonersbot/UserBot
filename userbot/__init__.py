@@ -92,11 +92,6 @@ DEFAULT_BIO = os.environ.get("DEFAULT_BIO", None)
 # pylint: disable=invalid-name
 bot = TelegramClient(StringSession(STRING_SESSION), API_KEY, API_HASH)
 
-if os.path.exists("learning-data-root.check"):
-    os.remove("learning-data-root.check")
-else:
-    LOGS.info("Braincheck file does not exist, fetching...")
-
 URL = 'https://raw.githubusercontent.com/RaphielGang/databasescape/master/learning-data-root.check'
 
 with open('learning-data-root.check', 'wb') as load:
@@ -105,7 +100,6 @@ with open('learning-data-root.check', 'wb') as load:
 # Global Variables
 SNIPE_TEXT = ""
 COUNT_MSG = 0
-BRAIN_CHECKER = []
 USERS = {}
 WIDE_MAP = dict((i, i + 0xFEE0) for i in range(0x21, 0x7F))
 WIDE_MAP[0x20] = 0x3000
