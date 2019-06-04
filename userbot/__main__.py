@@ -22,8 +22,6 @@ INVALID_PH = '\nERROR: The Phone No. entered is INVALID' \
              '\n       Recheck your Phone Number'
 
 for i in ALL_ROWS:
-try:
-    bot.start()
 except PhoneNumberInvalidError:
     print(INVALID_PH)
     exit(1)
