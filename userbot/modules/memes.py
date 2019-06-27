@@ -342,7 +342,7 @@ async def hoi(hello):
     await hello.edit("Nikal laude pehli fursat me nikal!😎")                      
 
 
-@register(outgoing=True, pattern="^.owo(?: |$)(.*)")
+@register(outgoing=True, pattern="^.bskd(?: |$)(.*)")
 async def faces(owo):
     """ UwU """
     if not owo.text[0].isalpha() and owo.text[0] not in ("/", "#", "@", "!"):
