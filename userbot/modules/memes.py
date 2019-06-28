@@ -339,7 +339,7 @@ async def hoi(hello):
 @register(outgoing=True, pattern="^land$")
 async def hoi(hello):
     """ Greet everyone! """
-    await hello.edit("Nikal laude pehli fursat me nikal!😎")                      
+    await hello.edit("Khayega Idhar ka Gayega udhar ka Nikal Bhosdike Maderchod Hat Nikal!😎")                      
 
 
 @register(outgoing=True, pattern="^.bskd(?: |$)(.*)")
@@ -353,7 +353,7 @@ async def faces(owo):
         elif textx:
             message = textx.text
         else:
-            await owo.edit("` Tu bhi nikal laude pehli fursat me nikal dikhna nhi ekdam! `")
+            await owo.edit("`Nikal Laude Pehli Fursat Me Nikal Koi Jarurt Nhi Idhar Teri Bhosdike Pehli Fursat Me nikal Chaderchod Laude! `")
             return
 
         reply_text = re.sub(r"(r|l)", "w", message)
